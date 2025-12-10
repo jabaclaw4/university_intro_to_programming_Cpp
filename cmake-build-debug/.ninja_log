@@ -1,0 +1,12 @@
+# ninja log v6
+24	549	7870558761437265	CMakeFiles/university_intro_to_programming_pp.dir/main.cpp.obj	9eb9d9df55a9160a
+2	433	7870559653253776	build.ninja	ae31e8312b995bec
+35	299	7870559654957644	CMakeFiles/university_intro_to_programming_pp.dir/src/point.cpp.obj	48f74e5a7a7b6423
+40	537	7870559655008218	CMakeFiles/university_intro_to_programming_pp.dir/src/vector.cpp.obj	df3bc467bb17e5f2
+538	820	7870559659978936	university_intro_to_programming_pp.exe	139e04d53507492f
+19	387	7870563603340962	CMakeFiles/university_intro_to_programming_pp.dir/main.cpp.obj	9eb9d9df55a9160a
+24	544	7870563939044914	CMakeFiles/university_intro_to_programming_pp.dir/src/vector.cpp.obj	df3bc467bb17e5f2
+18	578	7870563938988715	CMakeFiles/university_intro_to_programming_pp.dir/main.cpp.obj	9eb9d9df55a9160a
+578	724	7870563944581985	university_intro_to_programming_pp.exe	139e04d53507492f
+18	443	7870564539453694	CMakeFiles/university_intro_to_programming_pp.dir/main.cpp.obj	9eb9d9df55a9160a
+444	540	7870564543706807	university_intro_to_programming_pp.exe	139e04d53507492f

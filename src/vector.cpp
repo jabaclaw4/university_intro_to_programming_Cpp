@@ -18,8 +18,11 @@ double Vector::length() const {
 Vector Vector::operator+(const Vector& other) const {
     return Vector(x + other.x, y + other.y, z + other.z);
 }
-VectorCollection::VectorCollection() : vectors(nullptr), capacity(0), size(0) {}
+void Vector::print() const {
+    std::cout << "[" << x << ", " << y << ", " << z << "]";
+}
 
+VectorCollection::VectorCollection() : vectors(nullptr), capacity(0), size(0) {} //NEN
 //добавление нового вектора в коллекцию
 void VectorCollection::addVector(const Vector& vec) {
     if (size >= capacity) {
@@ -40,13 +43,12 @@ void VectorCollection::addVector(const Vector& vec) {
     size++;
 }
 
-// 2. Сортировка векторов по расстоянию от начала координат
+//cортировка векторов по расстоянию от начала координат
 void VectorCollection::sortByDistance() {
     // Простая сортировка пузырьком
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (vectors[j].length() > vectors[j + 1].length()) {
-                // Меняем местами
                 Vector temp = vectors[j];
                 vectors[j] = vectors[j + 1];
                 vectors[j + 1] = temp;
@@ -72,3 +74,10 @@ Vector VectorCollection::computeTotalVector() const { //суммарный ве�
     return total;
 }
 
+void VectorCollection::printAll() const {
+    for (int i = 0; i < size; i++) {
+        std::cout << i + 1 << ". ";
+        vectors[i].print();
+        std::cout << " (length = " << vectors[i].length() << ")" << std::endl;
+    }
+}
