@@ -22,30 +22,28 @@ void Vector::print() const {
     std::cout << "[" << x << ", " << y << ", " << z << "]";
 }
 
-VectorCollection::VectorCollection() : vectors(nullptr), capacity(0), size(0) {} //NEN
+VectorCollection::VectorCollection() : vectors(nullptr), capacity(0), size(0) {}
+
 //добавление нового вектора в коллекцию
 void VectorCollection::addVector(const Vector& vec) {
     if (size >= capacity) {
-        // Увеличиваем массив
+        //увеличиваем массив если нет мест. если коллкция пустая то делаем 2 места
         int newCapacity = (capacity == 0) ? 2 : capacity * 2;
-        Vector* newVectors = new Vector[newCapacity];
-
+        Vector* newVectors = new Vector[newCapacity];//выделяем память под новый массив
         for (int i = 0; i < size; i++) {
             newVectors[i] = vectors[i];
         }
-
         delete[] vectors;
         vectors = newVectors;
         capacity = newCapacity;
     }
-
     vectors[size] = vec;
     size++;
 }
 
 //cортировка векторов по расстоянию от начала координат
 void VectorCollection::sortByDistance() {
-    // Простая сортировка пузырьком
+    //пузырь
     for (int i = 0; i < size - 1; i++) {
         for (int j = 0; j < size - i - 1; j++) {
             if (vectors[j].length() > vectors[j + 1].length()) {
@@ -62,11 +60,11 @@ void VectorCollection::addSumOfAllVectors() {
     Vector sum;
     for (int i = 0; i < size; i++) {
         sum = sum + vectors[i];
-    }//добавляем сумму в коллекцию
+    }
     addVector(sum);
 }
 
-Vector VectorCollection::computeTotalVector() const { //суммарный вектор
+Vector VectorCollection::computeTotalVector() const {//суммарный вектор
     Vector total;
     for (int i = 0; i < size; i++) {
         total = total + vectors[i];

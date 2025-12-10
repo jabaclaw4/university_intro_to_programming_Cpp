@@ -52,18 +52,21 @@ build cmake_object_order_depends_target_university_intro_to_programming_pp: phon
 build CMakeFiles/university_intro_to_programming_pp.dir/main.cpp.obj: CXX_COMPILER__university_intro_to_programming_pp_unscanned_Debug C$:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/main.cpp || cmake_object_order_depends_target_university_intro_to_programming_pp
   DEP_FILE = CMakeFiles\university_intro_to_programming_pp.dir\main.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/include
   OBJECT_DIR = CMakeFiles\university_intro_to_programming_pp.dir
   OBJECT_FILE_DIR = CMakeFiles\university_intro_to_programming_pp.dir
 
 build CMakeFiles/university_intro_to_programming_pp.dir/src/point.cpp.obj: CXX_COMPILER__university_intro_to_programming_pp_unscanned_Debug C$:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/src/point.cpp || cmake_object_order_depends_target_university_intro_to_programming_pp
   DEP_FILE = CMakeFiles\university_intro_to_programming_pp.dir\src\point.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/include
   OBJECT_DIR = CMakeFiles\university_intro_to_programming_pp.dir
   OBJECT_FILE_DIR = CMakeFiles\university_intro_to_programming_pp.dir\src
 
 build CMakeFiles/university_intro_to_programming_pp.dir/src/vector.cpp.obj: CXX_COMPILER__university_intro_to_programming_pp_unscanned_Debug C$:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/src/vector.cpp || cmake_object_order_depends_target_university_intro_to_programming_pp
   DEP_FILE = CMakeFiles\university_intro_to_programming_pp.dir\src\vector.cpp.obj.d
   FLAGS = -g -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/jabaclaw4/CLionProjects/university-intro-to-programming-Сpp/include
   OBJECT_DIR = CMakeFiles\university_intro_to_programming_pp.dir
   OBJECT_FILE_DIR = CMakeFiles\university_intro_to_programming_pp.dir\src
 

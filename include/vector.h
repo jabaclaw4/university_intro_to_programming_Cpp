@@ -24,8 +24,8 @@ public:
 class VectorCollection {
 private:
     Vector* vectors;
-    int capacity;
-    int size;     //количество векторов
+    int capacity; //cколько может
+    int size; //количество уже векторов
 public:
     VectorCollection();
     void addVector(const Vector& vec);        //добавление нового вектора в коллекцию
